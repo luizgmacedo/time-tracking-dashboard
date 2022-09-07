@@ -23,6 +23,7 @@ export const useDashboardStore = defineStore('dashboard', {
       state.activities.map((activity) => [
         {
           title: activity.title,
+          //@ts-ignore
           timeframes: activity.timeframes[state.selectedPeriod], // Type problem
         },
       ]),
